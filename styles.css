@@ -42,6 +42,7 @@ header{
 
 .flex-container {
     display: flex;
+    align-items: center;
     justify-items: space-between;
     max-width: 1200px;
     width: 100%;
@@ -51,6 +52,7 @@ header{
     flex: 1;
     max-width: 50%;
     padding-right: 20px;
+    color:white;
 }
 
 .text-content h1{
@@ -83,9 +85,9 @@ header{
 
 .hero-image {
     flex: 1;
-    max-width: 50%;
+    max-width: 642.56px;
 }
 
 .hero-image img{
-    width:100%
+    width:542.56px
 }
