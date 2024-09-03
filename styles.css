@@ -1,27 +1,91 @@
-body {
+body{
     margin: 0;
-    padding: 0;
-    background-color:#475569;
-  }
-.navbar{
-    padding: 20px;
-    text-align: left; 
-    width: 149.26px;
-    height: 37.49px; 
+    padding: 45px;
+    box-sizing: border-box;
+    background-color: #3772FA;
+    font-family: Inter; 
 }
-.navbar a {
+
+header{
+    padding: 45px;
+    background-color:#3772FA;
+    text-align: left;
+}
+  
+.logo-container {
+    font-family: Inter;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 15px
+}
+.logo-image{
+    width: 41.03px;
+    height: 41.03px;
+    margin-right: 10pxs;
+}
+
+.logo-text {
+    font-weight: 149.26px;
+    font-size: 37.49px;
     color: white;
     font-weight: bold;
-    font-size: 35.37%;
-    align: center;
 }
-.hero-section {
-    padding: 100px 20px;
-    position: relative;
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
 }
-.hero-section h1 {
-    width: 580px;
-    height: 400px;
-    top: 298px;
-    left: 365px;
+
+.flex-container {
+    display: flex;
+    justify-items: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.text-content h1{
+    font-size: 3rem;
+    margin:0 0 10px 0;
+}
+
+.text-content p {
+    font-size: 1.25rem;
+    margin: 0 0 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button hover{
+    background-color: #0056b3;
+
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-image img{
+    width:100%
 }
