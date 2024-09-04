@@ -17,34 +17,35 @@ header{
     display: flex;
     align-items: left;
     justify-content: left;
-    gap: 15px
+    gap: 11.05px
 }
 .logo-image{
     width: 41.03px;
     height: 41.03px;
-    margin-right: 10pxs;
+    margin-right: 16pxs;
 }
 
 .logo-text {
-    font-weight: 149.26px;
-    font-size: 37.49px;
+    font-weight: 100px;
+    font-size: 41.03px;
     color: white;
     font-weight: bold;
 }
 
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     height: 100vh;
-    padding: 20px;
+    padding: 0px;
+    gap: 10px
 }
 
 .flex-container {
     display: flex;
-    align-items: center;
-    justify-items: space-between;
-    max-width: 1200px;
+    align-items:fit; 
+       justify-items: space-between;
+    max-width: 580px;
     width: 100%;
 }
 
@@ -52,6 +53,7 @@ header{
     flex: 1;
     max-width: 50%;
     padding-right: 20px;
+    margin: 0;
     color:white;
 }
 
@@ -61,7 +63,7 @@ header{
 }
 
 .text-content p {
-    font-size: 1.25rem;
+    font-size: 15px;
     margin: 0 0 20px 0;
 }
 
@@ -85,7 +87,8 @@ header{
 
 .hero-image {
     flex: 1;
-    max-width: 642.56px;
+    width: 642.56px
+    
 }
 
 .hero-image img{
