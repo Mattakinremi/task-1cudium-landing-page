@@ -72,22 +72,51 @@ font-weight: 600;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
+    min-width: 120px;
+  
+    position: relative;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button hover{
-    background-color: #0056b3;
-
-}
+  
+    padding: 12px 17px;
+    border: 0;
+    border-radius: 7px;
+  
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    background: radial-gradient(
+      ellipse at bottom,
+      rgb(83, 147, 214) 0%,
+      rgb(9, 195, 241) 45%
+    );
+  
+    color: rgb(255, 255, 255, 0.66);
+  
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  .cta-button::before {
+    content: "";
+    width: 100px;
+    height: 1px;
+  
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+  
+    background: blue;
+    opacity: 0.2;
+  
+    transition: all 1s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  
+  .cta-button:hover {
+    color: rgb(255, 255, 255, 1);
+    transform: scale(1.1) translateY(-3px);
+  }
+  
+  .cta-button:hover::before {
+    opacity: 1;
+  }
+  
 
 .hero-image {
     flex: 1;
