@@ -198,74 +198,55 @@ li{
     font-weight: 500;
 }
 
-.rely-section {
-    display: flex;
+.section {
     text-align: center;
     max-width: 900px;
-
 }
 
-.rely h3{
-    font-size: 60px;
+.content h1 {
+    font-size: 2.5rem;
     margin-bottom: 10px;
-    top: 1942px;
-    left: 575px;
 }
- .card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(2, 200px);
-    gap: 200px;
-    justify-content: center;
- }
-.card {
-    width: 190px;
-    height: 254px;
-    border-radius: 20px;
-    background: #f5f5f5;
-    position: relative;
-   border: 2px solid #edf0f7;
-    transition: 0.5s ease-out;
-    overflow: visible;
-   }
-   
-   .card-details {
-    color: black;
-    height: 100%;
-    gap: .5em;
-    display: grid;
-    place-content: center;
-   }
-   
 
-.card h1 {
-    margin: 0;
+.content p {
     font-size: 1.2rem;
-    color: #333;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Hover effect to lift the card */
+}
+
+.icon {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .card p {
-    margin: 10px 0 0;
     font-size: 1rem;
-    color: #666;
 }
 
-.text-body {
-    color: rgb(134, 134, 134);
-   }
-   
-
-   .text-title {
-    font-size: 1.5em;
-    font-weight: bold;
-   }
-   
-   .card:hover {
-    border-color: #008bf8;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-   }
-   
-   .card:hover .card-button {
-    transform: translate(-50%, 50%);
-    opacity: 1;
-   }
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+}
