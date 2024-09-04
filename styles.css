@@ -34,7 +34,7 @@ header{
 
 .hero {
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     justify-content: left;
     height: 100vh;
     padding: 0px;
@@ -43,9 +43,8 @@ header{
 
 .flex-container {
     display: flex;
-    align-items:fit; 
-       justify-items: space-between;
-    max-width: 580px;
+    align-items:flex-start; 
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -58,13 +57,18 @@ header{
 }
 
 .text-content h1{
-    font-size: 3rem;
+line-height: 90px;
+font-weight: 600;
+    font-size: 72px;
     margin:0 0 10px 0;
 }
 
 .text-content p {
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
     margin: 0 0 20px 0;
+    color: #e2ebf0;
 }
 
 .cta-button {
@@ -87,10 +91,11 @@ header{
 
 .hero-image {
     flex: 1;
-    width: 642.56px
+    width: 50%;
     
 }
 
 .hero-image img{
-    width:542.56px
+    width: 100%;
+    height:auto;
 }
