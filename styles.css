@@ -1,13 +1,13 @@
 body{
     margin: 0;
-    padding: 45px;
-    box-sizing: border-box;
+    padding: 0;
+    box-sizing:border-box;
     background-color: #3772FA;
     font-family: Inter; 
 }
 
 header{
-    padding: 45px;
+    padding: 101px;
     background-color:#3772FA;
     text-align: left;
 }
@@ -18,7 +18,7 @@ header{
     align-items: left;
     justify-content: left;
     gap: 11.05px
-}
+    }
 .logo-image{
     width: 41.03px;
     height: 41.03px;
@@ -37,7 +37,7 @@ header{
     align-items: flex-start;
     justify-content: left;
     height: 100vh;
-    padding: 0px;
+    padding: 101px;
     gap: 10px
 }
 
@@ -131,16 +131,16 @@ font-weight: 600;
 }
 
 .hero-image img{
-    width: 100%;
-    height:auto;
+    width: 642.56px;
+    height:822.69px;
 }
 
-.foreign-section{
+.rectangle-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: aliceblue;
-    padding: 10%;
+    background-color: rgb(248, 250, 252) ;
+    padding: 101px;
 }
 
 .currency-icons {
@@ -154,13 +154,15 @@ font-weight: 600;
 }
 
 .currency-icon:nth-child(1){
-    top: 0;
-    left: 10px;
+    top: 961px;
+    left: 279px;
+    height: 184px;
 }
 
 .currency-icon:nth-child(2){
-    top: 50px;
+    top: 1145px;
     left: 30px;
+    rotate: -180deg;
 }
 
 .content {
@@ -168,22 +170,102 @@ font-weight: 600;
 }
 
 h2{
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+    flex: 1;
+    font-size: 36px;
+    color: #475569;
+    font-weight: 700;
+    padding-left: 450px;
 }
 
-p{
+.p2{
     font-size: 16px;
-    color: rgb(#666, 0, 0);
-    margin: 20px;
+    color: #94a3b8;
+    padding-left: 450px;
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 18px;
 }
+
 ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 500px;
 }
 
 li{
-    font-size: 14px;
-    color: rgb(25#444, 255, 255);
+    font-size: 20px;
+    line-height: 30px;
+    color: #475569;
+    font-weight: 500;
 }
+
+.rely-section {
+    display: flex;
+    text-align: center;
+    max-width: 900px;
+
+}
+
+.rely h3{
+    font-size: 60px;
+    margin-bottom: 10px;
+    top: 1942px;
+    left: 575px;
+}
+ .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 200px;
+    justify-content: center;
+ }
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+   border: 2px solid #edf0f7;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+
+.card h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   .card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
