@@ -1,28 +1,38 @@
+/* COMMENTS */
+/* 1. When working on  webistes, you should have a mobile-first approach. Unless the use of the websites doesn't require it. */
+/* 2. Import font-family properly. Follow the embed intructions properly. */
+/* 3. use the design specifications */
+/* 4. use relative unit */
+
 body{
     margin: 0;
     padding: 0;
+    /* width: 100vw; */
     box-sizing:border-box;
-    background-color: #3772FA;
-    font-family: Inter; 
-}
+    background-color: #475569;  
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-header{
-    padding: 101px;
-    background-color:#3772FA;
-    text-align: left;
 }
   
 .logo-container {
-    font-family: Inter;
-    display: flex;
-    align-items: left;
-    justify-content: left;
+    padding: 4rem;
+    background-color:#475569;
+    text-align: left;
+     display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-family: "Inter", sans-serif;;
     gap: 11.05px
-    }
+}
+
 .logo-image{
     width: 41.03px;
     height: 41.03px;
-    margin-right: 16pxs;
+    margin-right: 16px;
 }
 
 .logo-text {
@@ -72,21 +82,24 @@ font-weight: 600;
 }
 
 .cta-button {
-    min-width: 120px;
-  
+    width: 23rem;
+    height: 4rem;
     position: relative;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
   
     padding: 12px 17px;
     border: 0;
     border-radius: 7px;
   
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-    background: radial-gradient(
+    /* background: radial-gradient(
       ellipse at bottom,
       rgb(83, 147, 214) 0%,
       rgb(9, 195, 241) 45%
-    );
+    ); */
+    background-color: #A6E6D6;
   
     color: rgb(255, 255, 255, 0.66);
   
