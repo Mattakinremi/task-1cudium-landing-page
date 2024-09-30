@@ -153,23 +153,25 @@ font-weight: 600;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(248, 250, 252) ;
-    padding: 101px;
+    width: 1920px;
+    height: 800px;
+    top: 961px;
 }
 
 .currency-icons {
-    position: relative;
+    position:relative;
 
-}
+} 
 
 .currency-icon {
     position: absolute;
     animation: float 4s ease-in-out infinite;
-}
+} 
 
 .currency-icon:nth-child(1){
     top: 961px;
     left: 279px;
-    height: 184px;
+    height: 184px; 
 }
 
 .currency-icon:nth-child(2){
@@ -177,7 +179,25 @@ font-weight: 600;
     left: 30px;
     rotate: -180deg;
 }
-
+.coin1 {
+    width: 184px;
+    height: 184px;
+    top: 961px;
+    left:279px;
+}
+.coin2  {
+    width: 223px;
+    height: 207px;
+    top: 1761px;
+    left: 352px;
+}
+.coin3 {
+    width: 355px;
+    height: 334px;
+    top: 1145px;
+    left:767px;
+    rotate: -180deg;
+}
 .content {
     max-width: 600px;
 }
@@ -392,3 +412,175 @@ line-height: 30px;
     }
 }
 
+@media (max-width: 768px) {  
+    body {
+        height: auto;
+    }
+    .card-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column; 
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+        top: 105.07px;
+       }
+
+    .flex-container{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 105.07px;
+        border-radius: 7px;
+        width: 238px;
+    }
+
+    .text-content {
+        max-width: 217px; 
+        position: relative;
+        padding-right: 0; 
+        text-align: center;
+    }
+        
+    .text-content h1 {
+        display:grid;
+        line-height: 38px; 
+        font-weight: 700px;
+        font-size: 30px; 
+        margin-top: 438px;
+        left: 69px;
+    }
+        
+ .text-content p {
+         font-size: 16px; 
+ }
+        
+ .cta-button {
+        width: 100%; 
+        padding: 12px 10px; 
+        font-size: 1rem; 
+  }
+        
+        
+ .hero-image img {
+        width: 236px;
+       height: 302.16px;
+       top: 438px;
+       left: 69px;
+       position: relative;
+}
+        
+ .rectangle-section {
+        flex-direction: column;
+        padding: 50px;
+            }
+        
+h2, .p2 {
+        padding-left: 0;
+        text-align: center; 
+            }
+h2, h3, h4, h5 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 700;
+    top: 842px;
+    width: 311px;
+}
+.p2, .p3 {
+    font-size: 12px;
+    width: 295px;
+    height: 59px;
+    line-height: 18px;
+}
+
+ul {
+    padding-left: 0;
+    text-align: left;
+    width: 226px;
+    padding-left: 71px ;
+}
+li{
+    font-size: 12px;
+    line-height: 18px;
+    height: 18px;
+}
+.coin2 {
+    width: 99px;
+    height: 93px;
+    top: 740px;
+    position: absolute;
+    left: 114px;
+    rotate: -180 deg;
+}
+
+.coin1 {
+    width: 68px;
+    height: 68px;
+    position: relative;
+    top: 1116px;
+    left: 313px;
+}
+
+.section {
+    width: 311px;
+    height: 1062px;
+    top: 1218px;
+    left: 40px;
+    padding-left: 0;
+    display: block;
+            }
+        
+.content2 h3 {
+        font-size: 36px; 
+            }
+        
+.card-container {
+        grid-template-columns: 1fr; 
+     }
+        
+.card, .card-1 {
+        width: 100%; 
+        height: auto;   
+     }
+
+h6 {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 600;
+    top: 2481px;
+    width: 123px;
+}
+
+.p6 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400px;
+    width: 244px;
+    height: 40px;
+    justify-content: left;
+
+}
+        
+.steps-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+        
+.step {
+        width: 90%; 
+        margin: 0 auto;
+    }
+        
+}
