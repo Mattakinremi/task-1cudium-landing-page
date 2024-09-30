@@ -216,7 +216,7 @@ li{
     justify-content: center;
     align-items: center;
     max-width:max-content;
-    padding-left: 400px;
+    /*padding-left: 400px;*/
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,200px);
 }
@@ -308,13 +308,17 @@ h5 {
 
 }
 section .how-it-works{
-    padding-top: 50px;
-    background-color: #f9f9f9;
-    margin: 20px 0;
+    /* padding-top: 50px; */
+    /* background-color: #F6F8FC; */
+    /* margin: 20px 0; */
 }
 .how-it-works {
-    background-color: #f9f9f9;
+    background-color: #f6f8fc;
     padding-bottom: 30px;
+    width: 1920px;
+    height: 565px;
+    top: 3354px;
+    left: -1px;
 }
 
 .steps-container {
@@ -322,15 +326,19 @@ section .how-it-works{
     justify-content: center;
     gap: 40px;
     padding-top: 20px;
+    /* width: 294px;
+    height: 203px; */
     }
 
     .step {
-        width: 200px;
+        width: 294px;
+        height: 203px;
+        top: 3563px;
+        left: 1186px;
         text-align: center;
-        padding:20px;
-        background-color: #fff;
-        box-shadow: 0 2px 10px rgba (0, 0, 0, 0.1);
-        border-radius: 8px;
+        /* padding:20px;  */
+        /* box-shadow: 0 2px 10px rgba (0, 0, 0, 0.1); */
+        /* border-radius: 8px; */
     }
 
     .icon2 {
@@ -352,8 +360,10 @@ section .how-it-works{
 
     .ready {
         background-color: inherit;
-        color: #e2ebf0;
+        color: #f6f8fc;
         text-align: center;
+        width: 699px;
+        height: 72px;
           }
 
 .ready h6{
@@ -362,8 +372,11 @@ section .how-it-works{
     line-height: 72px;
 }
 .p6 {
+    width: 474px;
+    height: 60px;
 font-size: 20px;
 font-weight: 400;
+line-height: 30px;
 }
 
     .ready p,
@@ -375,7 +388,7 @@ font-weight: 400;
 
 @media (max-width: 768px) {
     .card-container {
-        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
 
